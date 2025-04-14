@@ -1,6 +1,4 @@
-﻿using ExchangeCore.API.Middlewares;
-
-namespace ExchangeCore.API.Extensions;
+﻿namespace ExchangeCore.API.Extensions;
 
 public static class WebApplicationExtensions
 {
@@ -22,8 +20,6 @@ public static class WebApplicationExtensions
 
         app.UseAuthentication();
         app.UseAuthorization();
-
-        //app.UseRequestLogging();
 
         app.UseSwagger();
         app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Exchange Core API"));

@@ -31,7 +31,6 @@ using Moq;
 
 using System.Net;
 using System.Reflection;
-using System.Text;
 using System.Text.Json;
 
 namespace ExchangeCore.Tests.Controller;

@@ -17,6 +17,10 @@ public static class ServiceCollectionExtensions
 {
     public static WebApplicationBuilder ConfigureAppServices(this WebApplicationBuilder builder)
     {
+        // Load environment-specific configuration files.
+        builder.Configuration.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+            .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true, reloadOnChange: true);
+
         var logger = Log.Logger = new LoggerConfiguration()
             .Enrich.FromLogContext()
             .Enrich.With(new OpenTelemetryEnricher())  // Add our custom enricher
