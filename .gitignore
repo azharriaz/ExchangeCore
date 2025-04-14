@@ -1,0 +1,18 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/src/.vs
+/.vs
+/src/apps/.vs
+/src/apps/bin/Debug/net9.0
+/src/apps/obj
+/src/apps/ExchangeCore.API.csproj.user
+/src/common/ExchangeCore.Application/bin/Debug/net9.0
+/src/common/ExchangeCore.Application/obj
+/src/common/ExchangeCore.Domain/bin/Debug/net9.0
+/src/common/ExchangeCore.Domain/obj
+/src/common/ExchangeCore.Infrastructure/bin/Debug/net9.0
+/src/common/ExchangeCore.Infrastructure/obj
+/src/tests/ExchangeCore.Tests/bin/Debug/net9.0
+/src/tests/ExchangeCore.Tests/obj
